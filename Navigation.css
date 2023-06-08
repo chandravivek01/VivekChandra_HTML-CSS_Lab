@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting-up the Header of the Webpage Demo-Dropdown. */
+header {
+    color: white;
+    background-color: #4fb3d4;
+    font-size: xx-large;
+    font-weight: bolder;
+    /* Additional font from Google-Fonts for Header */
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+    padding: 20px 40px;
+}
+
+a {
+    font-size: large;
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown-content a {
+    font-size: small;
+}
+
+/* Changing the background-color of the given color to its little-darker-counterpart. */
+.dropdown li:hover {
+    background-color: #6600ff;
+}
+
+/* Changing the background-color of the given color to its little-darker-counterpart. */
+.dropdown-content li:hover {
+    background-color: #29293d;
+}
+
+.main-nav {
+    margin-inline: auto;
+    padding-inline: 20px;
+    background-color: #c299ff;
+    position: sticky;
+    z-index: 1;
+    top: 0%;
+}
+
+li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #c2c2d6;
+    top: 40px;
+}
+
+.dropdown-content li {
+    display: block;
+}
+
+.dropdown-content a {
+    color: steelblue;
+}
+
+/* Unfolding the Dropdown-List of the Nav-Bar-links upon being hovered. */
+
+.dropdown li:nth-child(1):hover .dropdown-content {
+    display: block;
+}
+
+.dropdown li:nth-child(2):hover .dropdown-content {
+    display: block;
+}
+
+.dropdown li:nth-child(3):hover .dropdown-content {
+    display: block;
+}
